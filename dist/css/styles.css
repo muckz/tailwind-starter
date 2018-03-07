@@ -14,9 +14,9 @@
  *    IE on Windows Phone and in iOS.
  */
 html {
-  line-height: 1.15; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+	line-height: 1.15; /* 1 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
 }
 /* Sections
    ========================================================================== */
@@ -24,7 +24,7 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0;
+	margin: 0;
 }
 /**
  * Add the correct display in IE 9-.
@@ -34,8 +34,8 @@ body {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+	font-size: 2em;
+	margin: 0.67em 0;
 }
 /* Grouping content
    ========================================================================== */
@@ -61,8 +61,8 @@ h1 {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 a {
-  background-color: transparent; /* 1 */
-  -webkit-text-decoration-skip: objects; /* 2 */
+	background-color: transparent; /* 1 */
+	-webkit-text-decoration-skip: objects; /* 2 */
 }
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
@@ -128,7 +128,7 @@ a {
 html [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; /* 2 */
+	-webkit-appearance: button; /* 2 */
 }
 /**
  * Remove the inner border and padding in Firefox.
@@ -137,8 +137,8 @@ html [type="button"],
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+	border-style: none;
+	padding: 0;
 }
 /**
  * Restore the focus styles unset by the previous rule.
@@ -147,7 +147,7 @@ html [type="button"],
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+	outline: 1px dotted ButtonText;
 }
 /**
  * Correct the padding in Firefox.
@@ -171,38 +171,38 @@ html [type="button"],
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
 }
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;
+	height: auto;
 }
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
 }
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
 }
 /* Interactive
    ========================================================================== */
@@ -227,7 +227,7 @@ html [type="button"],
  * Add the correct display in IE 10-.
  */
 [hidden] {
-  display: none;
+	display: none;
 }
 /**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
@@ -240,14 +240,14 @@ html [type="button"],
  * 2. Change the default font family in all browsers (opinionated)
  */
 html {
-  box-sizing: border-box; /* 1 */
-  font-family: sans-serif; /* 2 */
+	box-sizing: border-box; /* 1 */
+	font-family: sans-serif; /* 2 */
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 /**
  * Removes the default spacing and border for appropriate elements.
@@ -255,7 +255,7 @@ html {
 
 h1,
 p {
-  margin: 0;
+	margin: 0;
 }
 /**
  * Work around a Firefox/IE bug where the transparent `button` background
@@ -267,7 +267,7 @@ p {
  * might still respond to pointer events.
  */
 [tabindex="-1"]:focus {
-  outline: none !important;
+	outline: none !important;
 }
 /**
  * Tailwind custom reset styles
@@ -275,9 +275,9 @@ p {
 *,
 *::before,
 *::after {
-  border-width: 0;
-  border-style: solid;
-  border-color: #dae1e7;
+	border-width: 0;
+	border-style: solid;
+	border-color: #dae1e7;
 }
 /**
  * Temporary reset for a change introduced in Chrome 62 but now reverted.
@@ -288,12 +288,12 @@ p {
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  border-radius: 0;
+	border-radius: 0;
 }
 
 
 [role=button] {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 /**
@@ -310,82 +310,78 @@ p {
   * config file.
   */
 .container {
-  width: 100%;
+	width: 100%;
 }
 
 @media (min-width: 576px) {
-  .container {
-    max-width: 576px;
-  }
+	.container {
+		max-width: 576px;
+	}
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+	.container {
+		max-width: 768px;
+	}
 }
 
 @media (min-width: 992px) {
-  .container {
-    max-width: 992px;
-  }
+	.container {
+		max-width: 992px;
+	}
 }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
+	.container {
+		max-width: 1200px;
+	}
 }
 
 .font-sans {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .font-black {
-  font-weight: 900;
+	font-weight: 900;
 }
 
 .leading-normal {
-  line-height: 1.5;
+	line-height: 1.5;
 }
 
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .mb-3 {
-  margin-bottom: 0.75rem;
+	margin-bottom: 0.75rem;
 }
 
 .max-w-md {
-  max-width: 40rem;
+	max-width: 40rem;
 }
 
 .px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 .text-grey-darker {
-  color: #606f7b;
+	color: #606f7b;
 }
 
 .text-purple {
-  color: #9561e2;
-}
-
-.hover\:text-red:hover {
-  color: #e3342f;
+	color: #9561e2;
 }
 
 .hover\:text-purple-dark:hover {
-  color: #794acf;
+	color: #794acf;
 }
 
 /**

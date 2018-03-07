@@ -6,6 +6,10 @@ const postcss = require("gulp-postcss");
 const purgecss = require("gulp-purgecss");
 const tailwindcss = require("tailwindcss");
 const browserSync = require("browser-sync").create();
+const webstandards = require('gulp-webstandards');
+const pa11y = require('pa11y');
+const fancyLog = require('fancy-log');
+const chalk = require('chalk');
 
 // Custom extractor for purgeCSS, to avoid stripping classes with `:` prefixes
 class TailwindExtractor {
@@ -33,6 +37,28 @@ gulp.task("css", () => {
       })
     )
     .pipe(gulp.dest(paths.dist.css));
+});
+
+// Process data in an array synchronously, moving onto the n+1 item only after the nth item callback
+function doSynchronousLoop(data, processData, done) {
+    if (data.length > 0) {
+        const loop = (data, i, processData, done) => {
+            processData(data[i], i, () => {
+                if (++i < data.length) {
+                    loop(data, i, processData, done);
+                } else {
+                    done();
+                }
+            });
+        };
+        loop(data, 0, processData, done);
+    } else {
+        done();
+    }
+}
+gulp.task('webstandards', function () {
+    return gulp.src(["http://localhost:3000/index.html","http://localhost:3000/sub.html"])
+        .pipe(webstandards());
 });
 
 // browser-sync dev server
